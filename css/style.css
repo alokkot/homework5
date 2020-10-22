@@ -151,8 +151,10 @@ header{
 }
 
 .nav_links{
-  
+  display: flex;
+  align-items: center;  
   justify-content: center;
+  flex-direction: column;
 
 
 }
@@ -173,9 +175,8 @@ header{
 
   /* Cards! */
   .card {
-    display: flexbox;
-    align-content: center;
-    flex-direction: row;
+    display: flex;
+    flex-basis: 225px;
     
     }
 
@@ -186,10 +187,13 @@ header{
 
   /* Navbar */
   header{
+    justify-content: space-between;
+    flex-direction: row;
 
   }
 
   .nav_links{
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -201,6 +205,11 @@ header{
   .card {
     flex-basis: 200px;
   }
+  body{
+    background-image: none;
+  }
+  
+  
   /*Your code here again.*/
   /*You will want four selectors*/  
 }
