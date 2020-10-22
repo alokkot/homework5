@@ -54,8 +54,10 @@ footer{
 /*Keyframes for animation*/
 
 @-webkit-keyframes logo_wiggle{
-  /*Your code here.*/
-
+  from{
+    width: 25px;}
+  to{
+    width: 420px}
 }
 
 @keyframes logo_wiggle{
@@ -72,10 +74,9 @@ footer{
 .pricing{
     min-height: 500px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+    flex-wrap: wrap;
 }
 
 .card {
@@ -84,7 +85,6 @@ footer{
   border-radius: 7px;
   padding: 0 0 50px 0;
   flex-basis: 400px;
-  flex-grow: inherit;
 }
 
 .card > header{
