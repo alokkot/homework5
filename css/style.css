@@ -175,7 +175,6 @@ header{
 
   /* Cards! */
   .card {
-    display: flex;
     flex-basis: 225px;
     
     }
@@ -208,11 +207,23 @@ header{
   body{
     background-image: none;
   }
-  
-  
+  .gallery{
+    display:none;
+  }
+  #galley{
+    display: none;
+  }
+  footer{
+    display: block;
+  }
+  }
   /*Your code here again.*/
   /*You will want four selectors*/  
-}
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce){
+  #logo {
+    animation: none;
+  }
+}
